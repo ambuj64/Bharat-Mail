@@ -1,0 +1,159 @@
+/* Register.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f6ba87, #e4a66d);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  overflow-y: auto; /* allow scroll if content is long */
+}
+
+/* Form card */
+.register-box {
+  width: 500px; /* medium size */
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Logo */
+.register-box .Bharat {
+  display: block;
+  margin: 0 auto 15px;
+  width: 120px;
+  height: 120px;
+    border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #edaf75;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 16px;
+}
+
+/* Heading */
+.register-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* Form rows */
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  flex: 0 0 40%;
+  text-align: right;  /* align name to right side */
+  margin-right: 10px;
+  font-weight: 600;
+  color: #444;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 10px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.form-row input:focus {
+  border-color: #ef8b2b;
+  box-shadow: 0 0 4px rgba(239, 139, 43, 0.4);
+}
+
+/* Email box with @bharat.com */
+.email-row .email-box {
+  display: flex;
+  gap: 5px;
+}
+
+.email-row .email-box input:last-child {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #555;
+}
+
+/* Fieldset (Gender) */
+fieldset {
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+legend {
+  font-weight: 600;
+  color: #444;
+}
+
+/* Buttons */
+.register-box button.verify-btn {
+  margin-top: 6px;
+  padding: 8px 14px;
+  background: #ef8b2b;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.register-box button.verify-btn:hover {
+  background: #d97416;
+}
+
+.register-box input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: #ef8b2b;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.register-box input[type="submit"]:hover {
+  background: #d97416;
+}
+
+/* Login link */
+.register-box p {
+  margin-top: 16px;
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+}
+
+.register-box a {
+  color: #ef8b2b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-box a:hover {
+  text-decoration: underline;
+}

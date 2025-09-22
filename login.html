@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page </title>
+    <link rel="stylesheet" href="login.css">
+   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="login-box">
+        <img src ="B (2).png" class="avatar" alt="Avatar Image">
+        <h2>Login</h2>
+        <form action="#" method="post" novalidate></form>
+            <div>
+                <labelfor="user Name>Username</label><br/>
+            <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div>   
+            <labelfor="password">Password*</label><br>
+            <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div>
+            <labelfor="confirm password>Confirm Password*</label><br>
+            <input type="confirm" name="confirm password" placeholder="Confirm Password"required>
+            </div>
+            <div>   
+            <button type="submit">Login</button>
+            </div>    
+        </form>
+        <p>
+            Don't have an account? <a href="register.html">Register</a>
+        </p>
+
+        <script>
+        const loginForm = document.getElementById('loginForm');
+        const loginPage = document.getElementById('loginPage');
+        const mainPage = document.getElementById('mainPage');
+
+        // Login button action
+        loginForm.addEventListener('submit', function(e){
+            e.preventDefault();
+
+            // Example: static check (aap backend ke sath integrate bhi kar sakte ho)
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+
+            if(username === "admin" && password === "1234"){ 
+                loginPage.style.display = "none";   // Hide login
+                mainPage.style.display = "block";  // Show main page
+            } else {
+                alert("Invalid Username or Password!");
+            }
+        });
+
+        // Logout button
+        function logout(){
+            mainPage.style.display = "none";
+            loginPage.style.display = "block";
+        }
+        </script>
+    </div>
+</body>
+</html>

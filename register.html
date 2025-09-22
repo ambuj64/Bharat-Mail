@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="Register.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="register-box">
+        <img src="B (2).png" class="Bharat" alt="Bharat Image">
+        <h2>Register</h2>
+        <form action="#" method="post" novalidate>
+            <div>
+                <labelfor="First Name>First Name</label><br/>
+            <input type="text" name="First Name" placeholder="First Name" required>
+            </div>
+            <br>
+            <div>
+                <labelfor="Last Name>Last Name</label><br>
+            <input type="text" name="Last Name" placeholder="Last Name" required>
+            </div>
+            <br/>
+            <div>
+                <labelfor="NewEmail">New Email*</label><br/>
+            <input type="email" id="email" placeholder="Username" required>
+            <input type="text" id="@bharat.com" placeholder="@Bharat.com" readonly>
+            </div>
+            <br>
+            <div>
+                <labelfor="Password">Password*</label><br/>
+            <input type="password" name="password" placeholder="Password" require>
+            </div>
+            <br>
+            <div>
+                <labelfor="Confirm Password>Confirm Password*</label><br/>
+            <input type="password" name="confirm password" placeholder="Confirm Password" required>
+            </div>
+            <br>
+            <div>
+                <labelfor="Date of Birth>Date of Birth*</label><br>
+            <input type="Date of Birth*" name="DD/MM/YYYY*" placeholder="DD/MM/YYYY" required>
+            <br><br>
+            </div>
+            <fieldset>
+                <legend>Gender*</legend>
+                <input type="radio" name="GenderMale" value="Male" required title="Male"/>
+                <labelfor="Male">Male</label><br/>
+                <input type="radio" name="GenderFemale" value="Female" required title="Female"/>
+                <labelfor="Female">Female</label><br/>
+                <input type="radio" id="GenderOther" name="GenderOther" value="Other" required title="Other"/>
+                <label for="GenderOther">Other</label><br/>
+            </fieldset>
+           
+            <div>
+                <labelfor="Phone Number>Phone Number*</label><br>
+               
+            <input type="Phone Number*" name="Phone Number" placeholder="+91 9876543210" pattern="[\d+\s\-()]{7,}"/>
+            <br>
+            <label for ="otp"> Enter OTP</label><br>
+            <input type="text" name="otp" placeholder="Enter 6-digit OTP">
+            <button type="button">Verify</button>
+            <br>
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Register"><br>
+            <p>
+            Already have an account? <a href="login.html">Login</a>
+        </p>
+        </form>
+            <script>
+                document.getElementById('registerform').addEventListener('submit', function(event) {
+                event.preventDefault(); 
+                window.location.href = "Email.html";
+                });
+            </script>
+
+</body>
+</html>
